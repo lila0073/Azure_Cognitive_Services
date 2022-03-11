@@ -85,7 +85,7 @@ def main():
                 if VerifyFace(os.path.join('images', command), 'maklowicz', 'employees_group') == 'Weryfikacja udana!':
                     print('Osoba ze zdjęcia jest Robertem Makłowiczem.')
                     maklowicz = DetectFaces(os.path.join('images',command))
-                    file_image = "C:\\Users\\Natalia\PycharmProjects\AI-102-AIEngineerr\\19-face\Python\\face-api\images" + "\maklowicz" + str(
+                    file_image = "images" + "\maklowicz" + str(
                         random.randrange(
                             8, 19)) + ".jpg"
                     show_image(file_image)
@@ -97,19 +97,19 @@ def main():
                     #print(osoba)
                     if osoba[9] > 0:
                         print("Oto zaskoczony Pan Makłowicz.")
-                        show_image(r"C:\\Users\\Natalia\PycharmProjects\AI-102-AIEngineerr\\19-face\Python\\face-api\images\maklowicz16.jpg")
+                        show_image(r"maklowicz16.jpg")
                     elif osoba[7] >0.8:
                         print("Oto neutralny Pan Makłowicz.")
-                        show_image(r"C:\\Users\\Natalia\PycharmProjects\AI-102-AIEngineerr\\19-face\Python\\face-api\images\maklowicz19.jpg")
+                        show_image(r"maklowicz19.jpg")
                     elif osoba[6] >0.9:
                         print("Oto bardzo szczęśliwy Pan Makłowicz.")
-                        show_image(r"C:\\Users\\Natalia\PycharmProjects\AI-102-AIEngineerr\\19-face\Python\\face-api\images\maklowicz10.jpg")
+                        show_image(r"maklowicz10.jpg")
                     elif osoba[6]>0.8:
                         print("Oto szczęśliwy Pan Makłowicz.")
-                        show_image(r"C:\\Users\\Natalia\PycharmProjects\AI-102-AIEngineerr\\19-face\Python\\face-api\images\maklowicz11.jpg")
+                        show_image(r"maklowicz11.jpg")
                     else:
                         print("Oto Pan Makłowicz.")
-                        show_image(r"C:\\Users\\Natalia\PycharmProjects\AI-102-AIEngineerr\\19-face\Python\\face-api\images\maklowicz8.jpg")
+                        show_image(r"maklowicz8.jpg")
             except:
                 print("błąd")
 
