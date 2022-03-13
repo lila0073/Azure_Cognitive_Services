@@ -6,3 +6,5 @@ The goal was to:
 * Give the result - is Robert Makłowicz or not
 * Recognize the emotion of each person on the photo
 * Return photo of Robert Makłowicz according to recognized emotions
+
+Remember, to run this program you need to specify the secret key from your Azure account.
